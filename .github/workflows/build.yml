@@ -51,7 +51,7 @@ jobs:
 
       - name: Do the deploy thing
         run: |
-          ssh -o "StrictHostKeyChecking no" ${{ secrets.VPS_USER }}@devrel-prodbox-nyc"
+          ssh -o "StrictHostKeyChecking no" ${{ secrets.VPS_USER }}@devrel-prodbox-nyc "
             docker compose pull
             docker compose up -d
           "
