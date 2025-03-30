@@ -48,9 +48,9 @@ jobs:
           oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
           tags: tag:devrel-ci
 
-      - name: Do the deploy thing
-        run: |
-          ssh -o "StrictHostKeyChecking no" ${{ secrets.VPS_USER }}@devrel-prodbox-nyc "
-            docker compose pull
-            docker compose up -d
-          "
+#      - name: Do the deploy thing
+#        run: |
+#          ssh -o "StrictHostKeyChecking no" ${{ secrets.VPS_USER }}@devrel-prodbox-nyc "
+#            docker compose pull
+#            docker compose up -d
+#          "
